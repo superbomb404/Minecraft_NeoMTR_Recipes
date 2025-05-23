@@ -1,16 +1,15 @@
 ServerEvents.recipes(allthemods => {
-		allthemods.recipes.kubejs.shaped('mtr:dashboard_2', 
-			[
-				"III",
-				"RGL",
-				"III"
-			],
-			{
-				I: 'minecraft:planks',
-				R: 'minecraft:redstone_dusts',
-				G: 'minecraft:glass_pane',
-				L: 'minecraft:glowstone_dusts'
-			}
+
+		allthemods.shapeless(Item.of('mtr:apg_door', 8),
+		  [
+		    'c:redstone_blocks',
+		    'minecraft:iron_door',
+		    'c:glowstone_dusts',
+			'minecraft:glass_pane'
+		  ]
 		)
+
+
+
 	}
 )

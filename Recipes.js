@@ -46,8 +46,8 @@ ServerEvents.recipes(mtr => {
           'GCG'
         ],
         {
-          I: 'minecraft:iron_ingots',
-          G: 'minecraft:glowstone_dusts',
+          I: 'minecraft:iron_ingot',
+          G: 'minecraft:glowstone_dust',
           C: 'minecraft:clock'
         }
     )//mtr:arrival_projector_1_small x8

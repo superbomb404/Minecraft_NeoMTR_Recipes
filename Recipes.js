@@ -1,4 +1,4 @@
-erverEvents.recipes(allthemods => {
+ServerEvents.recipes(allthemods => {
 		allthemods.recipes.kubejs.shaped('mtr:dashboard_2', 
 			[
 				"III",

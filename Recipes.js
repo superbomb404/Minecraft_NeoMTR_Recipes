@@ -14,20 +14,3 @@ ServerEvents.recipes(allthemods => {
 		)
 	}
 )
-
-ServerEvents.recipes(allthemods => {
-		allthemods.recipes.kubejs.shaped('mtr:dashboard', 
-			[
-				"III",
-				"RGL",
-				"III"
-			],
-			{
-				I: 'minecraft:planks',
-				R: 'minecraft:redstone_dusts',
-				G: 'minecraft:glass_pane',
-				L: 'minecraft:glowstone_dusts'
-			}
-		)
-	}
-)

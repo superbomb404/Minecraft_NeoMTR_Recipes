@@ -68,10 +68,10 @@ ServerEvents.recipes(mtr => {
       'III'
     ],
     {
-      I: 'minecraft:plank',
-      R: 'minecraft:redstone_dust',
+      I: Ingredient.of('#minecraft:planks'),
+      R: 'minecraft:redstone',
       G: 'minecraft:glass_pane',
-      L:'minecraft:glowstone_dust'
+      L: 'minecraft:glowstone_dust'
     }
   )//mtr:dashboard_2
   
@@ -84,7 +84,7 @@ ServerEvents.recipes(mtr => {
     {
       I: 'minecraft:iron_ingot',
       B: 'minecraft:iron_block',
-      L:'minecraft:log'
+      L: Ingredient.of('#minecraft:logs')
     }
   )//mtr:boat_node
   
@@ -96,7 +96,7 @@ ServerEvents.recipes(mtr => {
     ],
     {
       W: 'minecraft:white_wool',
-      S: 'minecraft:wood_stick'
+      S: 'minecraft:stick'
     }
   )//mtr:brush
   
@@ -108,9 +108,9 @@ ServerEvents.recipes(mtr => {
     ],
     {
       I: 'minecraft:string',
-      R: 'minecraft:redstone_dust',
+      R: 'minecraft:redstone',
       G: 'minecraft:glass_pane',
-      L:'minecraft:glowstone_dust'
+      L: 'minecraft:glowstone_dust'
     }
   )//mtr:dashboard_3
   
@@ -123,7 +123,7 @@ ServerEvents.recipes(mtr => {
     {
       I: 'minecraft:iron_ingot',
       B: 'minecraft:iron_block',
-      S:'minecraft:string'
+      S: 'minecraft:string'
     }
   )//mtr:cable_car_node_lower_1
   
@@ -182,7 +182,7 @@ ServerEvents.recipes(mtr => {
       'I'
     ],
     {
-      B: 'minecraft:iron_bar',
+      B: 'minecraft:iron_bars',
       I: 'minecraft:iron_ingot'
     }
   )//mtr:clock_pole
@@ -210,9 +210,9 @@ ServerEvents.recipes(mtr => {
   
   mtr.shapeless(Item.of('mtr:escalator',8),
     [
-      'minecraft:redstone_dust',
+      'minecraft:redstone',
       'minecraft:iron_block',
-      'minecraft:stone_brick_stair',
+      'minecraft:stone_brick_stairs',
       'minecraft:glass_pane'
     ]
   )//mtr:escalator
@@ -224,7 +224,7 @@ ServerEvents.recipes(mtr => {
       'minecraft:orange_stained_glass_pane',
       'minecraft:orange_stained_glass_pane',
       'minecraft:orange_stained_glass_pane',
-      'minecraft:iron_bar'
+      'minecraft:iron_bars'
     ]
   )//glass_fence_cio
   
@@ -235,7 +235,7 @@ ServerEvents.recipes(mtr => {
       'minecraft:light_gray_stained_glass_pane',
       'minecraft:light_gray_stained_glass_pane',
       'minecraft:light_gray_stained_glass_pane',
-      'minecraft:iron_bar'
+      'minecraft:iron_bars'
     ]
   )//mtr:glass_fence_ckt
   
@@ -246,7 +246,7 @@ ServerEvents.recipes(mtr => {
       'minecraft:light_blue_stained_glass_pane',
       'minecraft:light_blue_stained_glass_pane',
       'minecraft:light_blue_stained_glass_pane',
-      'minecraft:iron_bar'
+      'minecraft:iron_bars'
     ]
   )//mtr:glass_fence_heo
   
@@ -257,7 +257,7 @@ ServerEvents.recipes(mtr => {
       'minecraft:purple_stained_glass_pane',
       'minecraft:purple_stained_glass_pane',
       'minecraft:purple_stained_glass_pane',
-      'minecraft:iron_bar'
+      'minecraft:iron_bars'
     ]
   )//mtr:glass_fence_mos
   
@@ -267,7 +267,7 @@ ServerEvents.recipes(mtr => {
       'minecraft:glass_pane',
       'minecraft:glass_pane',
       'minecraft:glass_pane',
-      'minecraft:iron_bar'
+      'minecraft:iron_bars'
     ]
   )//mtr:glass_fence_plain
   
@@ -278,7 +278,7 @@ ServerEvents.recipes(mtr => {
       'minecraft:yellow_stained_glass_pane',
       'minecraft:yellow_stained_glass_pane',
       'minecraft:yellow_stained_glass_pane',
-      'minecraft:iron_bar'
+      'minecraft:iron_bars'
     ]
   )//mtr:glass_fence_shm
   
@@ -289,7 +289,7 @@ ServerEvents.recipes(mtr => {
       'minecraft:white_stained_glass_pane',
       'minecraft:white_stained_glass_pane',
       'minecraft:white_stained_glass_pane',
-      'minecraft:iron_bar'
+      'minecraft:iron_bars'
     ]
   )//mtr:glass_fence_stained
   
@@ -300,7 +300,7 @@ ServerEvents.recipes(mtr => {
       'minecraft:pink_stained_glass_pane',
       'minecraft:pink_stained_glass_pane',
       'minecraft:pink_stained_glass_pane',
-      'minecraft:iron_bar'
+      'minecraft:iron_bars'
     ]
   )//mtr:glass_fence_stw
   
@@ -311,7 +311,7 @@ ServerEvents.recipes(mtr => {
       'minecraft:lime_stained_glass_pane',
       'minecraft:lime_stained_glass_pane',
       'minecraft:lime_stained_glass_pane',
-      'minecraft:iron_bar'
+      'minecraft:iron_bars'
     ]
   )//mtr:glass_fence_tsh
   
@@ -322,7 +322,7 @@ ServerEvents.recipes(mtr => {
       'minecraft:brown_stained_glass_pane',
       'minecraft:brown_stained_glass_pane',
       'minecraft:brown_stained_glass_pane',
-      'minecraft:iron_bar'
+      'minecraft:iron_bars'
     ]
   )//mtr:glass_fence_wks
   
@@ -344,8 +344,8 @@ ServerEvents.recipes(mtr => {
       'I'
     ],
     {
-      R: 'minecraft:redstone_dust',
-      I: 'minecraft:iron_bar'
+      R: 'minecraft:redstone',
+      I: 'minecraft:iron_bars'
     }
   )//mtr:lift_buttons_link_connector
   
@@ -357,7 +357,7 @@ ServerEvents.recipes(mtr => {
     ],
     {
       L: 'minecraft:lava_bucket',
-      I: 'minecraft:iron_bar'
+      I: 'minecraft:iron_bars'
     }
   )//mtr:lift_buttons_link_remover
   
@@ -396,7 +396,7 @@ ServerEvents.recipes(mtr => {
     ],
     {
       I: 'minecraft:iron_ingot',
-      R: 'minecraft:redstone_dust',
+      R: 'minecraft:redstone',
       S: 'minecraft:stone_button'
     }
   )//mtr:lift_panel_even_1_base
@@ -422,7 +422,7 @@ ServerEvents.recipes(mtr => {
     ],
     {
       I: 'minecraft:iron_ingot',
-      R: 'minecraft:redstone_dust',
+      R: 'minecraft:redstone',
       S: 'minecraft:stone_button'
     }
   )//mtr:lift_panel_odd_1_base

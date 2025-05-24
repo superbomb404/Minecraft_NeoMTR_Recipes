@@ -5,9 +5,9 @@ ServerEvents.recipes(mtr => {
   mtr.shapeless(
 	Item.of('mtr:apg_door', 8),
 	  [
-	  	'##minecraft:redstones_blocks',
+	  	'minecraft:redstone_block',
 	  	'minecraft:iron_door',
-	  	'#minecraft:glowstone_dusts',
+	  	'minecraft:glowstone_dust',
 	  	'minecraft:glass_pane'
 	  ]
   )//apg_door_1
@@ -49,8 +49,8 @@ ServerEvents.recipes(mtr => {
       'GCG'
     ],
     {
-      I: '#minecraft:iron_ingots',
-      G: '#minecraft:glowstone_dusts',
+      I: 'minecraft:iron_ingot',
+      G: 'minecraft:glowstone_dust',
       C: 'minecraft:clock'
     }
   )//mtr:arrival_projector_1_small x8
@@ -69,9 +69,9 @@ ServerEvents.recipes(mtr => {
     ],
     {
       I: '#minecraft:planks',
-      R: '#minecraft:redstones',
+      R: 'minecraft:redstone',
       G: 'minecraft:glass_pane',
-      L: '#minecraft:glowstone_dusts'
+      L: 'minecraft:glowstone_dust'
     }
   )//mtr:dashboard_2
   
@@ -82,9 +82,9 @@ ServerEvents.recipes(mtr => {
       'LLL'
     ],
     {
-      I: '#minecraft:iron_ingots',
-      B: '#minecraft:iron_blocks',
-      L: '##minecraft:logss'
+      I: 'minecraft:iron_ingot',
+      B: 'minecraft:iron_block',
+      L: '#minecraft:logs'
     }
   )//mtr:boat_node
   
@@ -96,7 +96,7 @@ ServerEvents.recipes(mtr => {
     ],
     {
       W: 'minecraft:white_wool',
-      S: '#minecraft:sticks'
+      S: 'minecraft:stick'
     }
   )//mtr:brush
   
@@ -108,9 +108,9 @@ ServerEvents.recipes(mtr => {
     ],
     {
       I: 'minecraft:string',
-      R: '#minecraft:redstones',
+      R: 'minecraft:redstone',
       G: 'minecraft:glass_pane',
-      L: '#minecraft:glowstone_dusts'
+      L: 'minecraft:glowstone_dust'
     }
   )//mtr:dashboard_3
   
@@ -121,8 +121,8 @@ ServerEvents.recipes(mtr => {
       'SSS'
     ],
     {
-      I: '#minecraft:iron_ingots',
-      B: '#minecraft:iron_blocks',
+      I: 'minecraft:iron_ingot',
+      B: 'minecraft:iron_block',
       S: 'minecraft:string'
     }
   )//mtr:cable_car_node_lower_1
@@ -152,8 +152,8 @@ ServerEvents.recipes(mtr => {
       'III'
     ],
     {
-      I: '#minecraft:iron_ingots',
-      G: '#minecraft:glowstone_dusts'
+      I: 'minecraft:iron_ingot',
+      G: 'minecraft:glowstone_dust'
     }
   )//mtr:ceiling_1
   
@@ -183,7 +183,7 @@ ServerEvents.recipes(mtr => {
     ],
     {
       B: 'minecraft:iron_bars',
-      I: '#minecraft:iron_ingots'
+      I: 'minecraft:iron_ingot'
     }
   )//mtr:clock_pole
   
@@ -194,7 +194,7 @@ ServerEvents.recipes(mtr => {
       'NIN'
     ],
     {
-      I: '#minecraft:iron_ingots',
+      I: 'minecraft:iron_ingot',
       N: 'minecraft:iron_nugget',
       C: 'minecraft:clock'
     }
@@ -202,16 +202,16 @@ ServerEvents.recipes(mtr => {
   
   mtr.shapeless(Item.of('mtr:driver_key'),
     [
-      '#minecraft:iron_ingots',
-      '#minecraft:iron_nuggets',
+      'minecraft:iron_ingot',
+      'minecraft:iron_nugget',
       'minecraft:chain'
     ]
   )//mtr:driver_key
   
   mtr.shapeless(Item.of('mtr:escalator',8),
     [
-      '#minecraft:redstones',
-      '#minecraft:iron_blocks',
+      'minecraft:redstone',
+      'minecraft:iron_block',
       'minecraft:stone_brick_stairs',
       'minecraft:glass_pane'
     ]
@@ -332,7 +332,7 @@ ServerEvents.recipes(mtr => {
       'IBI'
     ],
     {
-      I: '#minecraft:iron_ingots',
+      I: 'minecraft:iron_ingot',
       B: 'minecraft:stone_button'
     }
   )//mtr:lift_buttons_1
@@ -344,7 +344,7 @@ ServerEvents.recipes(mtr => {
       'I'
     ],
     {
-      R: '#minecraft:redstones',
+      R: 'minecraft:redstone',
       I: 'minecraft:iron_bars'
     }
   )//mtr:lift_buttons_link_connector
@@ -363,9 +363,9 @@ ServerEvents.recipes(mtr => {
   
   mtr.shapeless(Item.of('mtr:lift_door_1',8),
     [
-      '##minecraft:redstones_blocks',
+      'minecraft:redstone_block',
       'minecraft:iron_door',
-      '#minecraft:iron_ingots',
+      'minecraft:iron_ingot',
       'minecraft:glass_pane',
       'minecraft:glass_pane'
     ]
@@ -373,9 +373,9 @@ ServerEvents.recipes(mtr => {
   
   mtr.shapeless(Item.of('mtr:lift_door_odd_1',8),
     [
-      '##minecraft:redstones_blocks',
+      'minecraft:redstone_block',
       'minecraft:iron_door',
-      '#minecraft:iron_ingots',
+      'minecraft:iron_ingot',
       'minecraft:glass_pane',
       'minecraft:glass_pane',
       'minecraft:glass_pane'
@@ -395,8 +395,8 @@ ServerEvents.recipes(mtr => {
       'ISI'
     ],
     {
-      I: '#minecraft:iron_ingots',
-      R: '#minecraft:redstones',
+      I: 'minecraft:iron_ingot',
+      R: 'minecraft:redstone',
       S: 'minecraft:stone_button'
     }
   )//mtr:lift_panel_even_1_base
@@ -421,8 +421,8 @@ ServerEvents.recipes(mtr => {
       'ISI'
     ],
     {
-      I: '#minecraft:iron_ingots',
-      R: '#minecraft:redstones',
+      I: 'minecraft:iron_ingot',
+      R: 'minecraft:redstone',
       S: 'minecraft:stone_button'
     }
   )//mtr:lift_panel_odd_1_base
@@ -439,7 +439,7 @@ ServerEvents.recipes(mtr => {
       ' P '
     ],
     {
-      I: '#minecraft:iron_ingots',
+      I: 'minecraft:iron_ingot',
       P: 'minecraft:piston'
     }
   )//mtr:lift_refresher
@@ -450,7 +450,7 @@ ServerEvents.recipes(mtr => {
       'ILI'
     ],
     {
-      I: '#minecraft:iron_ingots',
+      I: 'minecraft:iron_ingot',
       L: 'minecraft:ladder'
     }
   )//mtr:mtr:lift_track_1
@@ -461,7 +461,7 @@ ServerEvents.recipes(mtr => {
       'ISI'
     ],
     {
-      I: '#minecraft:iron_ingots',
+      I: 'minecraft:iron_ingot',
       L: 'minecraft:ladder',
       S: 'minecraft:smooth_stone_slab'
     }
@@ -470,7 +470,7 @@ ServerEvents.recipes(mtr => {
   mtr.shapeless(Item.of('mtr:logo'),
     [
       'mtr:metal',
-      '#minecraft:red_dyes'
+      '#c:red_dyes'
     ]
   )//mtr:logo
 

@@ -2508,6 +2508,19 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
     ]
   )//mtr:ticket_barrier_exit_1
 
+  mtr.shaped(Item.of('mtrsteamloco:one_way_gate_1',32),
+    [
+      'RG',
+      'RG',
+      'BB'
+    ],
+    {
+      R: 'minecraft:redstone',
+      G: 'minecraft:glowstone_dust',
+      B: 'minecraft:iron_block'
+    }
+  )//mtrsteamloco:one_way_gate_1
+
   mtr.shaped(Item.of('mtr:ticket_machine',4),
     [
       'III',

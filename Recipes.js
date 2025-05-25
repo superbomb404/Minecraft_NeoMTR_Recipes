@@ -87,6 +87,19 @@ ServerEvents.recipes(mtr => {
       L: '#minecraft:logs'
     }
   )//mtr:boat_node
+
+  mtr.shaped(Item.of('mtr:airplane_node',32),
+    [
+      'BIB',
+      'I I',
+      'LLL'
+    ],
+    {
+      I: 'minecraft:iron_ingot',
+      B: 'minecraft:iron_block',
+      L: '#minecraft:logs'
+    }
+  )//mtr:airplane_node
   
   mtr.shaped(Item.of('mtr:brush'),
     [
@@ -113,6 +126,20 @@ ServerEvents.recipes(mtr => {
       L: 'minecraft:glowstone_dust'
     }
   )//mtr:dashboard_3
+
+  mtr.shaped(Item.of('mtr:dashboard_4'),
+    [
+      'III',
+      'RGL',
+      'III'
+    ],
+    {
+      I: 'minecraft:feather',
+      R: 'minecraft:redstone',
+      G: 'minecraft:glass_pane',
+      L: 'minecraft:glowstone_dust'
+    }
+  )//mtr:dashboard_4
   
   mtr.shaped(Item.of('mtr:cable_car_node_lower',32),
     [
@@ -529,6 +556,24 @@ ServerEvents.recipes(mtr => {
       'minecraft:iron_block'
     ]
   )//mtr:metal
+
+  mtr.shaped(Item.of('mtr:mosaic_tile_slab',6),
+    [
+      'BBB'
+    ],
+    {
+      B: 'mtr:mosaic_tile'
+    }
+  )//mtr:mosaic_tile_slab
+
+  mtr.shaped(Item.of('mtr:mosaic_tile',2),
+    [
+      'BB'
+    ],
+    {
+      B: 'minecraft:calcite'
+    }
+  )//mtr:mosaic_tile
 
   mtr.shaped(Item.of('mtr:pids_1', 8),
     [
@@ -1038,6 +1083,19 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       B: 'minecraft:lapis_block'
     }
   )//mtr:rail_connector_turn_back
+
+  mtr.shaped(Item.of('mtr:rail_connector_runway'),
+    [
+      'BRB',
+      'BIB',
+      ' R '
+    ],
+    {
+      R: 'minecraft:rail',
+      I: 'minecraft:iron_ingot',
+      B: 'minecraft:feather'
+    }
+  )//mtr:rail_connector_runway
 
   mtr.shaped(Item.of('mtr:rail',32),
     [
@@ -2009,6 +2067,27 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
     }
   )//mtr:station_color_metal
 
+  mtr.shaped(Item.of('mtr:station_color_mosaic_tile_slab',6),
+    [
+      'BBB'
+    ],
+    {
+      B: 'mtr:station_color_mosaic_tile'
+    }
+  )//mtr:station_color_mosaic_tile_slab
+
+  mtr.shaped(Item.of('mtr:station_color_mosaic_tile',8),
+    [
+      'BBB',
+      'BDB',
+      'BBB'
+    ],
+    {
+      B: 'mtr:mosaic_tile',
+      D: '#c:dyes'
+    }
+  )//mtr:station_color_mosaic_tile
+
   mtr.shaped(Item.of('mtr:station_color_planks_slab',6),
     [
       'BBB'
@@ -2544,7 +2623,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T T'
     ],
     {
-      T: 'mtr:tunnel_creator_4_5'
+      T: 'minecraft:tunnel_creator_4_5'
     }
   )//mtr:tunnel_creator_4_3_2
 
@@ -2555,7 +2634,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_5_3'
+      T: 'minecraft:tunnel_creator_5_3'
     }
   )//mtr:tunnel_creator_4_3_4
 
@@ -2576,7 +2655,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'TT'
     ],
     {
-      T: 'mtr:tunnel_creator_4_3'
+      T: 'minecraft:tunnel_creator_4_3'
     }
   )//mtr:tunnel_creator_4_5_1
 
@@ -2585,7 +2664,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T T'
     ],
     {
-      T: 'mtr:tunnel_creator_4_7'
+      T: 'minecraft:tunnel_creator_4_7'
     }
   )//mtr:tunnel_creator_4_5_2
 
@@ -2596,7 +2675,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_5_5'
+      T: 'minecraft:tunnel_creator_5_5'
     }
   )//mtr:tunnel_creator_4_5_4
 
@@ -2605,7 +2684,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'TT'
     ],
     {
-      T: 'mtr:tunnel_creator_4_5'
+      T: 'minecraft:tunnel_creator_4_5'
     }
   )//mtr:tunnel_creator_4_7_1
 
@@ -2614,7 +2693,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T T'
     ],
     {
-      T: 'mtr:tunnel_creator_4_9'
+      T: 'minecraft:tunnel_creator_4_9'
     }
   )//mtr:tunnel_creator_4_7_2
 
@@ -2625,7 +2704,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_5_7'
+      T: 'minecraft:tunnel_creator_5_7'
     }
   )//mtr:tunnel_creator_4_7_4
 
@@ -2634,7 +2713,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'TT'
     ],
     {
-      T: 'mtr:tunnel_creator_4_7'
+      T: 'minecraft:tunnel_creator_4_7'
     }
   )//mtr:tunnel_creator_4_9_1
 
@@ -2645,7 +2724,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_5_9'
+      T: 'minecraft:tunnel_creator_5_9'
     }
   )//mtr:tunnel_creator_4_9_4
 
@@ -2654,7 +2733,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T T'
     ],
     {
-      T: 'mtr:tunnel_creator_5_5'
+      T: 'minecraft:tunnel_creator_5_5'
     }
   )//mtr:tunnel_creator_5_3_2
 
@@ -2664,7 +2743,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_4_3'
+      T: 'minecraft:tunnel_creator_4_3'
     }
   )//mtr:tunnel_creator_5_3_3
 
@@ -2675,7 +2754,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_6_3'
+      T: 'minecraft:tunnel_creator_6_3'
     }
   )//mtr:tunnel_creator_5_3_4
 
@@ -2684,7 +2763,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'TT'
     ],
     {
-      T: 'mtr:tunnel_creator_5_3'
+      T: 'minecraft:tunnel_creator_5_3'
     }
   )//mtr:tunnel_creator_5_5_1
 
@@ -2693,7 +2772,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T T'
     ],
     {
-      T: 'mtr:tunnel_creator_5_7'
+      T: 'minecraft:tunnel_creator_5_7'
     }
   )//mtr:tunnel_creator_5_5_2
 
@@ -2703,7 +2782,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_4_5'
+      T: 'minecraft:tunnel_creator_4_5'
     }
   )//mtr:tunnel_creator_5_5_3
 
@@ -2714,7 +2793,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_6_5'
+      T: 'minecraft:tunnel_creator_6_5'
     }
   )//mtr:tunnel_creator_5_5_4
 
@@ -2723,7 +2802,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'TT'
     ],
     {
-      T: 'mtr:tunnel_creator_5_5'
+      T: 'minecraft:tunnel_creator_5_5'
     }
   )//mtr:tunnel_creator_5_7_1
 
@@ -2732,7 +2811,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T T'
     ],
     {
-      T: 'mtr:tunnel_creator_5_9'
+      T: 'minecraft:tunnel_creator_5_9'
     }
   )//mtr:tunnel_creator_5_7_2
 
@@ -2742,7 +2821,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_4_7'
+      T: 'minecraft:tunnel_creator_4_7'
     }
   )//mtr:tunnel_creator_5_7_3
 
@@ -2753,7 +2832,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_6_7'
+      T: 'minecraft:tunnel_creator_6_7'
     }
   )//mtr:tunnel_creator_5_7_4
 
@@ -2762,7 +2841,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'TT'
     ],
     {
-      T: 'mtr:tunnel_creator_5_7'
+      T: 'minecraft:tunnel_creator_5_7'
     }
   )//mtr:tunnel_creator_5_9_1
 
@@ -2772,7 +2851,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_4_9'
+      T: 'minecraft:tunnel_creator_4_9'
     }
   )//mtr:tunnel_creator_5_9_3
 
@@ -2783,7 +2862,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_6_9'
+      T: 'minecraft:tunnel_creator_6_9'
     }
   )//mtr:tunnel_creator_5_9_4
 
@@ -2792,7 +2871,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T T'
     ],
     {
-      T: 'mtr:tunnel_creator_6_5'
+      T: 'minecraft:tunnel_creator_6_5'
     }
   )//mtr:tunnel_creator_6_3_2
 
@@ -2802,7 +2881,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_5_3'
+      T: 'minecraft:tunnel_creator_5_3'
     }
   )//mtr:tunnel_creator_6_3_3
 
@@ -2811,7 +2890,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'TT'
     ],
     {
-      T: 'mtr:tunnel_creator_6_3'
+      T: 'minecraft:tunnel_creator_6_3'
     }
   )//mtr:tunnel_creator_6_5_1
 
@@ -2820,7 +2899,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T T'
     ],
     {
-      T: 'mtr:tunnel_creator_6_7'
+      T: 'minecraft:tunnel_creator_6_7'
     }
   )//mtr:tunnel_creator_6_5_2
 
@@ -2830,7 +2909,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_5_5'
+      T: 'minecraft:tunnel_creator_5_5'
     }
   )//mtr:tunnel_creator_6_5_3
 
@@ -2839,7 +2918,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'TT'
     ],
     {
-      T: 'mtr:tunnel_creator_6_5'
+      T: 'minecraft:tunnel_creator_6_5'
     }
   )//mtr:tunnel_creator_6_7_1
 
@@ -2848,7 +2927,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T T'
     ],
     {
-      T: 'mtr:tunnel_creator_6_9'
+      T: 'minecraft:tunnel_creator_6_9'
     }
   )//mtr:tunnel_creator_6_7_2
 
@@ -2858,7 +2937,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_5_7'
+      T: 'minecraft:tunnel_creator_5_7'
     }
   )//mtr:tunnel_creator_6_7_3
 
@@ -2867,7 +2946,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'TT'
     ],
     {
-      T: 'mtr:tunnel_creator_6_7'
+      T: 'minecraft:tunnel_creator_6_7'
     }
   )//mtr:tunnel_creator_6_9_1
 
@@ -2877,7 +2956,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'T'
     ],
     {
-      T: 'mtr:tunnel_creator_5_9'
+      T: 'minecraft:tunnel_creator_5_9'
     }
   )//mtr:tunnel_creator_6_9_3
 

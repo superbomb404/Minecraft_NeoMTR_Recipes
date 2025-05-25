@@ -376,7 +376,7 @@ ServerEvents.recipes(mtr => {
     }
   )//mtr:lift_buttons_link_connector
   
-  mtr.shaped(Item.of('mtr:lift_buttons_link_remover'),
+  mtr.shaped(Item.of('mtr:lift_buttons_link_connector'),
     [
       'I',
       'L',
@@ -1748,7 +1748,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
     ],
     {
       B: 'minecraft:cobblestone',
-      D: '#minecraft:beds'
+      D: 'minecraft:bed'
     }
   )//mtr:station_color_bedrock
 
@@ -2578,7 +2578,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'minecraft:smooth_stone',
       'minecraft:smooth_stone',
       'minecraft:smooth_stone',
-      'mtr:rail'
+      '#c:nodes'
     ]
   )//mtr:train_cargo_loader
 
@@ -2590,7 +2590,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'minecraft:smooth_stone',
       'minecraft:smooth_stone',
       'minecraft:smooth_stone',
-      'mtr:rail'
+      '#c:nodes'
     ]
   )//mtr:train_cargo_unloader
 
@@ -2602,7 +2602,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'minecraft:smooth_stone',
       'minecraft:smooth_stone',
       'minecraft:smooth_stone',
-      'mtr:rail'
+      '#c:nodes'
     ]
   )//mtr:train_schedule_sensor
 
@@ -2614,7 +2614,7 @@ mtr.shaped(Item.of('mtr:rail_connector_300_one_way'),
       'minecraft:smooth_stone',
       'minecraft:smooth_stone',
       'minecraft:smooth_stone',
-      'mtr:rail'
+      '#c:nodes'
     ]
   )//mtr:train_sensor
 
